@@ -47,10 +47,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/1.png);
+  background-image: url(./images/rings.png);
   background-repeat: no-repeat;
-  background-position: center 150px;
-  background-size: 60% auto;
+  background-position: center;
+  background-size: 100% auto;
 }
 @media (max-width: 768px) {
   .section.one {

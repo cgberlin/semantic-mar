@@ -6,7 +6,7 @@ body {
   cursor: pointer;
 }
 .ui.fixed.top.menu {
-  background-color: #AAAAAA;
+  background-color: black;
 }
 .ui.fixed.top.menu .item {
   color: #FFFFFF;
@@ -47,15 +47,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/rings.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+  background-image: url(./images/rings.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
 @media (max-width: 768px) {
-  .section.one {
-    background-position: center 300px;
-    background-size: 80% auto;
+.section.one {
+    
   }
 }
 .section.one .grid {
@@ -86,14 +87,14 @@ body {
   min-height: 450px;
 }
 .section.four {
-  background-color: #AAAAAA;
+  background-color: black;
 }
 .section.five {
   background-color: #FFFFFF;
   min-height: 450px;
 }
 .section.six {
-  background-color: #AAAAAA;
+  background-color: black;
   min-height: 450px;
   color: black !important;
 }
@@ -101,6 +102,15 @@ body {
   background-color:#DDDDDD;
 }
 .ui.fluid.button {
-  background-color: #DDDDDD;
+  background-color: white;
   color:black;
+}
+.ui.fluid.button:hover {
+  background-color:#DDDDDD;
+}
+.item:hover {
+  background-color:#2e2e2e !important;
+}
+.ui.secondary.vertical.menu .item:hover {
+  background-color:#DDDDDD !important;
 }

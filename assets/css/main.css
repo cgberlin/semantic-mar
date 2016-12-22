@@ -37,7 +37,7 @@ body {
   padding: 0px 0px;
 }
 .ui.white.header {
-  color: #FFFFFF;
+  color: black;
 }
 .section {
   padding: 30px 10px;
@@ -86,13 +86,21 @@ body {
   min-height: 450px;
 }
 .section.four {
-  background-color: #3DCCC7;
+  background-color: #AAAAAA;
 }
 .section.five {
   background-color: #FFFFFF;
   min-height: 450px;
 }
 .section.six {
-  background-color: #07BEB8;
+  background-color: #AAAAAA;
   min-height: 450px;
+  color: black !important;
+}
+.section.seven {
+  background-color:#DDDDDD;
+}
+.ui.fluid.button {
+  background-color: #DDDDDD;
+  color:black;
 }

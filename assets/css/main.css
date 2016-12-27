@@ -37,13 +37,13 @@ body {
   padding: 0px 0px;
 }
 .ui.white.header {
-  color: black;
+  color: white !important;
 }
 .section {
   padding: 30px 10px;
 }
 .section.one {
-  height: 500px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ body {
 }
 @media (max-width: 768px) {
 .section.one {
-    
+    height:100vh;
   }
 }
 .section.one .grid {
@@ -113,4 +113,21 @@ body {
 }
 .ui.secondary.vertical.menu .item:hover {
   background-color:#DDDDDD !important;
+}
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+  text-align:center;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#describe-greg {
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  color:white;
 }

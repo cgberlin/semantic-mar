@@ -1,6 +1,6 @@
 body {
   padding-top: 60px;
-  background-color: #C4FFF9;
+  background-color: white;
 }
 .pointer {
   cursor: pointer;
@@ -84,18 +84,18 @@ body {
 }
 .section.three {
   background-color: #FFFFFF;
-  min-height: 450px;
+  min-height: 650px;
 }
 .section.four {
   background-color: black;
 }
 .section.five {
   background-color: #FFFFFF;
-  min-height: 450px;
+  min-height: 650px;
 }
 .section.six {
   background-color: black;
-  min-height: 450px;
+  min-height: 600px;
   color: black !important;
 }
 .section.seven {
@@ -130,4 +130,11 @@ body {
   justify-content: space-around;
   flex-wrap:wrap;
   color:white;
+}
+#pendant-cards {
+  max-width:80vw;
+  margin:2rem;
+}
+#pendants {
+  display: none;
 }

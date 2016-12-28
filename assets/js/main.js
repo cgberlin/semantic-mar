@@ -37,4 +37,13 @@ $(document).ready(function() {
             animation: "slide"
         });
     });
+
+    $('#see-pendants').on('click', function(e){
+        e.preventDefault();
+        $('.pusher').hide();
+        $('#pendants').show();
+        TweenMax.staggerFromTo($('.ui.raised.card'), 3, 
+            {y:-800, opacity:0},
+            {y:0, opacity:1}, 2);
+    });
 });

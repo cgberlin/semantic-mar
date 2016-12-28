@@ -40,10 +40,14 @@ $(document).ready(function() {
 
     $('#see-pendants').on('click', function(e){
         e.preventDefault();
-        $('.pusher').hide();
-        $('#pendants').show();
-        TweenMax.staggerFromTo($('.ui.raised.card'), 3, 
-            {y:-800, opacity:0},
-            {y:0, opacity:1}, 2);
+        TweenMax.to($('.pusher'), .5, 
+            {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
     });
+
+    function showCollection(Name) {
+        $('#pendants').show();
+        TweenMax.staggerFromTo(Name, .5, 
+            {x:-800, opacity:0},
+            {x:0, opacity:1}, .1);
+    }
 });

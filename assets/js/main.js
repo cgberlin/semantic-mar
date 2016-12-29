@@ -52,7 +52,12 @@ $(document).ready(function() {
     $('#home-button, #home-logo').on('click', function(e){
         e.preventDefault();
         if ($('.main-landing').is(':visible') == false){
-            hideAndShow($('#pendants'), showHome());
+            if ($('#pendants').is(':visible')){
+                hideAndShow($('#pendants'), showHome());
+            }
+            else if ($('#earrings').is(':visible')) {
+                hideAndShow($('#earrings'), showHome());
+            }
      }
     });
     function hideMain(ShowMeAfter) {

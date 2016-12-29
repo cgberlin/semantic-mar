@@ -33,15 +33,46 @@ $(document).ready(function() {
 
     $('#see-pendants, #dropdown-pendant').on('click', function(e){
         e.preventDefault();
+        hideEverything();
         hideMain();
         $('#pendants').show();
     });
 
     $('#dropdown-earrings, #see-earrings').on('click', function(e){
         e.preventDefault();
+        hideEverything();
         hideMain();
         $('#earrings').show();
     });
+
+    $('#dropdown-pins, #see-pins').on('click', function(e){
+        e.preventDefault();
+        hideEverything();
+        hideMain();
+        $('#pins').show();
+    });
+
+    $('#dropdown-yearly, #see-yearly').on('click', function(e){
+        e.preventDefault();
+        hideEverything();
+        hideMain();
+        $('#by-year').show();
+    });
+
+    function hideEverything() {
+        if ($('#pendants').is(':visible')) {
+            $('#pendants').hide();
+        }
+        else if ($('#earrings').is(':visible')) {
+            $('#earrings').hide();
+        }
+        else if ($('#pins').is(':visible')) {
+            $('#pins').hide()
+        }
+        else if ($('#by-year').is(':visible')) {
+            $('#by-year').hide();
+        }
+    }
 
     function showCollection(Name) {
         $('.ui.rasied.card').css('visiblity', 'visible');
@@ -57,6 +88,12 @@ $(document).ready(function() {
             }
             else if ($('#earrings').is(':visible')) {
                 hideAndShow($('#earrings'), showHome());
+            }
+            else if ($('#pins').is(':visible')) {
+                hideAndShow($('#pins'), showHome());
+            }
+            else if ($('#by-year').is(':visible')) {
+                hideAndShow($('#by-year'), showHome());
             }
      }
     });

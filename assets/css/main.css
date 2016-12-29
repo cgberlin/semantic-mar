@@ -84,19 +84,21 @@ body {
 }
 .section.three {
   background-color: #FFFFFF;
-  min-height: 650px;
+  min-height: 470px;
 }
 .section.four {
   background-color: black;
 }
 .section.five {
   background-color: #FFFFFF;
-  min-height: 650px;
+  min-height: 470px;
 }
 .section.six {
   background-color: black;
   min-height: 600px;
-  color: black !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section.seven {
   background-color:#DDDDDD;
@@ -121,15 +123,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#describe-greg {
-  display:flex;
-  flex-flow:column;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap:wrap;
-  color:white;
 }
 #pendant-cards {
   max-width:80vw;

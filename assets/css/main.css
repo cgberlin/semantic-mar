@@ -135,7 +135,7 @@ body {
   max-width:80vw;
   margin:2rem;
 }
-#pendants {
+#pendants, #earrings, #by-year, #pins {
   display: none;
 }
 #pendants-header {

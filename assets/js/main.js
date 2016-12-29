@@ -31,11 +31,16 @@ $(document).ready(function() {
         });
     });
 
-    $('#see-pendants, #phone-dropdown-pendant, #dropdown-pendant').on('click', function(e){
+    $('#see-pendants, #dropdown-pendant').on('click', function(e){
         e.preventDefault();
-        TweenMax.to($('.main-landing'), .5, 
-            {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
+        hideMain();
         $('#pendants').show();
+    });
+
+    $('#dropdown-earrings, #see-earrings').on('click', function(e){
+        e.preventDefault();
+        hideMain();
+        $('#earrings').show();
     });
 
     function showCollection(Name) {
@@ -50,6 +55,10 @@ $(document).ready(function() {
             hideAndShow($('#pendants'), showHome());
      }
     });
+    function hideMain(ShowMeAfter) {
+        TweenMax.to($('.main-landing'), .5, 
+            {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
+    }
     function hideAndShow(HideThis, ShowThis){
         HideThis.hide();
         ShowThis();

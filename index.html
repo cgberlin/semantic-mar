@@ -14,14 +14,14 @@
 
 <body>
     <div class="ui fixed top large menu">
-        <a href="#section-one" data-toggle="slide" class="item"><h2>Mar of Santa Barbara</h2></a>
+        <a id = "home-logo" href="#section-one" data-toggle="slide" class="item"><h2>Mar of Santa Barbara</h2></a>
         <a href="javascript:void(0)" id="toggle" class="item"><h2><i class="sidebar icon"></i></h2></a>
         <div class="menu right">
-            <a href="#section-one" data-toggle="slide" class="item">Home</a>
+            <a id = "home-button" href="" data-toggle="" class="item">Home</a>
             <a class="item pointer" data-toggle="popup" data-content="#product" data-position="bottom right">Collections</a>
             <div id="product" class="ui popup">
                 <div class="ui secondary vertical menu">
-                    <a href="" class="item">Pendants</a>
+                    <a href="" class="item", id = "dropdown-pendant">Pendants</a>
                     <a href="" class="item">Earrings</a>
                     <a href="" class="item">Pins</a>
                     <a href="" class="item">By Year</a>
@@ -30,28 +30,7 @@
             <a href="#section-six" data-toggle="slide" class="item">Contact</a>
         </div>
     </div>
-    <div class="ui sidebar inverted vertical menu">
-        <a href="#section-one" data-toggle="slide" class="item">Home</a>
-        <a href="#section-two" data-toggle="slide" class="item">What We Are?</a>
-        <a href="#section-three" data-toggle="slide" class="item">Slider</a>
-        <div class="ui accordion item">
-            <div class="title">
-                Dropdown
-            </div>
-            <div class="content">
-                <div class="ui secondary vertical menu">
-                    <div class="header item">DROPDOWN LIST</div>
-                    <a href="" class="item">Pendants</a>
-                    <a href="" class="item">Earrings</a>
-                    <a href="" class="item">Pins</a>
-                    <a href="" class="item">By Year</a>
-                </div>
-            </div>
-        </div>
-        <a href="#section-five" data-toggle="slide" class="item">Blog</a>
-        <a href="#section-six" data-toggle="slide" class="item">Contact</a>
-    </div>
-    <div class="pusher">
+    <div class="main-landing">
         <div class="section one" id="section-one">
             <div class="ui centered stackable grid">
                 <div class="eight wide column center aligned">
@@ -186,7 +165,7 @@
             </div>
         </div>
         <div class = "pendants" id = "pendants" align="center">
-            <div class = "ui header">Pendants</div>
+            <div class = "ui header" id = "pendants-header">Pendants</div>
                 <div class = "ui four cards" id = "pendant-cards">
                     <div class = "ui raised card">
                         <div class = "image">
@@ -238,8 +217,7 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/semantic.min.js"></script>
     <script type="text/javascript" src="assets/js/flexslider.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> 
-      <script src ="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> 
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

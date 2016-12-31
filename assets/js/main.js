@@ -110,4 +110,12 @@ $(document).ready(function() {
         TweenMax.to($('.main-landing'), .5,
             {x:0, autoAlpha: 1, display:'block'});
     }
+    $('.ui.raised.card').hover(
+      	function () {
+      		TweenMax.to(this, 0.8, { css:{ scaleX:1.2, scaleY:1.2, zIndex:100, boxShadow:"0px 0px 9px gray" }, ease:Circ.easeOut});
+      	},
+      	function () {
+      		TweenMax.to(this, 1, { css:{ scaleX:1, scaleY:1, zIndex:1, boxShadow:"none" }, ease:Circ.easeOut});
+      	}
+      );
 });

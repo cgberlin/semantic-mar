@@ -8,7 +8,7 @@ $(document).ready(function() {
         })
     });
 
-    $('a[data-toggle="slide"]').on('click', function(e) {    
+    $('a[data-toggle="slide"]').on('click', function(e) {
         e.preventDefault();
 
         var target = this.hash;
@@ -75,8 +75,9 @@ $(document).ready(function() {
     }
 
     function showCollection(Name) {
+        $('body').scrollTop(0);
         $('.ui.rasied.card').css('visiblity', 'visible');
-        TweenMax.staggerFromTo(Name, .5, 
+        TweenMax.staggerFromTo(Name, .5,
             {x:-800, opacity:0},
             {x:0, autoAlpha:1, visibility:'visible'}, .1);
     }
@@ -98,7 +99,7 @@ $(document).ready(function() {
      }
     });
     function hideMain(ShowMeAfter) {
-        TweenMax.to($('.main-landing'), .5, 
+        TweenMax.to($('.main-landing'), .5,
             {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
     }
     function hideAndShow(HideThis, ShowThis){
@@ -106,7 +107,7 @@ $(document).ready(function() {
         ShowThis();
     }
     function showHome(){
-        TweenMax.to($('.main-landing'), .5, 
+        TweenMax.to($('.main-landing'), .5,
             {x:0, autoAlpha: 1, display:'block'});
     }
 });

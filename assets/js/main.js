@@ -104,7 +104,6 @@ $(document).ready(function() {
     }
     function hideAndShow(HideThis, ShowThis){
         HideThis.hide();
-        ShowThis();
     }
     function showHome(){
         TweenMax.to($('.main-landing'), .5,

@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/rings.png); 
+  background-image: url(./images/rings.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -134,4 +134,15 @@ body {
 #pendants-header {
   margin-top:3rem;
   font-size:4rem;
+}
+.ui.stackable.card .image {
+  background:center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:80% !important;
+}
+.ui.stackable.card {
+  height:17rem;
 }

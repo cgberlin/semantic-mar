@@ -143,6 +143,11 @@ body {
   background-size: cover;
   height:80% !important;
 }
-.ui.stackable.card {
+.ui.stackable.card  {
   height:17rem;
+  box-shadow:none;
+  border:1px solid LightGray;
+}
+.ui.stackable.card .content {
+  background-color:#fafafa;
 }

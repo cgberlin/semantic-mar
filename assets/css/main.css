@@ -131,7 +131,7 @@ body {
 #pendants, #earrings, #by-year, #pins {
   display: none;
 }
-#pendants-header {
+#pendants-header, #earrings-header {
   margin-top:3rem;
   font-size:4rem;
 }

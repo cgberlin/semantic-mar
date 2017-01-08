@@ -187,6 +187,118 @@ earringArray = ['assets/img/earrings/EM.jpg',
 'assets/img/earrings/marofsb_2012_011.jpg',
 'assets/img/earrings/marofsb_2012_012.jpg'];
 
+pendantsArray = ['assets/img/pendants/Copy_of_NM141.jpg',
+'assets/img/pendants/IMG_8120.jpg',
+'assets/img/pendants/NEW-PENDANTS-2012~~element12.jpg',
+'assets/img/pendants/NM119.jpg',
+'assets/img/pendants/NM120jpg.jpg',
+'assets/img/pendants/NM121.jpg',
+'assets/img/pendants/NM130.jpg',
+'assets/img/pendants/NM144.jpg',
+'assets/img/pendants/NM169.jpg',
+'assets/img/pendants/NS114.jpg',
+'assets/img/pendants/NS138.jpg',
+'assets/img/pendants/NS139.jpg',
+'assets/img/pendants/NS140.jpg',
+'assets/img/pendants/NS152.jpg',
+'assets/img/pendants/NS49.jpg',
+'assets/img/pendants/NS56.jpg',
+'assets/img/pendants/NS58.jpg',
+'assets/img/pendants/NS59.jpg',
+'assets/img/pendants/NS64_.jpg',
+'assets/img/pendants/NS65.jpg',
+'assets/img/pendants/NS69.jpg',
+'assets/img/pendants/NS85.jpg',
+'assets/img/pendants/NS98.jpg',
+'assets/img/pendants/NS99.jpg',
+'assets/img/pendants/Pendant_1.jpg',
+'assets/img/pendants/Pendant_3.jpg',
+'assets/img/pendants/Pendants-1~~element11~~10.jpg',
+'assets/img/pendants/Pendants-1~~element11~~11.jpg',
+'assets/img/pendants/Pendants-1~~element11~~12.jpg',
+'assets/img/pendants/Pendants-1~~element11~~13.jpg',
+'assets/img/pendants/Pendants-1~~element11~~14.jpg',
+'assets/img/pendants/Pendants-1~~element11~~15.jpg',
+'assets/img/pendants/Pendants-1~~element11~~16.jpg',
+'assets/img/pendants/Pendants-1~~element11~~17.jpg',
+'assets/img/pendants/Pendants-1~~element11~~2.jpg',
+'assets/img/pendants/Pendants-1~~element11~~20.jpg',
+'assets/img/pendants/Pendants-1~~element11~~4.jpg',
+'assets/img/pendants/Pendants-1~~element11~~5.jpg',
+'assets/img/pendants/Pendants-1~~element11~~6.jpg',
+'assets/img/pendants/Pendants-1~~element11~~7.jpg',
+'assets/img/pendants/Pendants-1~~element11~~8.jpg',
+'assets/img/pendants/Pendants-1~~element18.jpg',
+'assets/img/pendants/Pendants-1~~element19.jpg',
+'assets/img/pendants/Pendants-1~~element20.jpg',
+'assets/img/pendants/Pendants-1~~element21.jpg',
+'assets/img/pendants/Pendants-2~~element11~~1.jpg',
+'assets/img/pendants/Pendants-2~~element11~~10.jpg',
+'assets/img/pendants/Pendants-2~~element11~~11.jpg',
+'assets/img/pendants/Pendants-2~~element11~~12.jpg',
+'assets/img/pendants/Pendants-2~~element11~~13.jpg',
+'assets/img/pendants/Pendants-2~~element11~~14.jpg',
+'assets/img/pendants/Pendants-2~~element11~~15.jpg',
+'assets/img/pendants/Pendants-2~~element11~~16.jpg',
+'assets/img/pendants/Pendants-2~~element11~~17.jpg',
+'assets/img/pendants/Pendants-2~~element11~~18.jpg',
+'assets/img/pendants/Pendants-2~~element11~~20.jpg',
+'assets/img/pendants/Pendants-2~~element11~~21.jpg',
+'assets/img/pendants/Pendants-2~~element11~~23.jpg',
+'assets/img/pendants/Pendants-2~~element11~~24.jpg',
+'assets/img/pendants/Pendants-2~~element11~~25.jpg',
+'assets/img/pendants/Pendants-2~~element11~~26.jpg',
+'assets/img/pendants/Pendants-2~~element11~~28.jpg',
+'assets/img/pendants/Pendants-2~~element11~~29.jpg',
+'assets/img/pendants/Pendants-2~~element11~~3.jpg',
+'assets/img/pendants/Pendants-2~~element11~~5.jpg',
+'assets/img/pendants/Pendants-2~~element11~~6.jpg',
+'assets/img/pendants/Pendants-2~~element11~~7.jpg',
+'assets/img/pendants/Pendants-2~~element11~~8.jpg',
+'assets/img/pendants/Pendants-2~~element11~~9.jpg',
+'assets/img/pendants/Pendants-2~~element13.jpg',
+'assets/img/pendants/Seaglass-Pendants-1~~element10.jpg',
+'assets/img/pendants/Seaglass-Pendants-1~~element13.jpg',
+'assets/img/pendants/Seaglass-Pendants-1~~element14.jpg',
+'assets/img/pendants/Seaglass-Pendants-1~~element16.jpg',
+'assets/img/pendants/Seaglass-Pendants-1~~element18.jpg',
+'assets/img/pendants/Seaglass-Pendants-2~~element12.jpg',
+'assets/img/pendants/Seaglass-Pendants-2~~element13.jpg',
+'assets/img/pendants/Seaglass-Pendants-2~~element18.jpg',
+'assets/img/pendants/Seaglass-Pendants-2~~element26.jpg',
+'assets/img/pendants/_MG_8884.jpg',
+'assets/img/pendants/_MG_8912.jpg',
+'assets/img/pendants/marofsb_2012_015.jpg',
+'assets/img/pendants/marofsb_2012_016.jpg',
+'assets/img/pendants/pendant_2.jpg'];
+
+pinsArray = ['assets/img/pins/319P.jpg',
+'assets/img/pins/807P.jpg',
+'assets/img/pins/975P.jpg',
+'assets/img/pins/Pins-1~~element11~~10.jpg',
+'assets/img/pins/Pins-1~~element11~~11.jpg',
+'assets/img/pins/Pins-1~~element11~~13.jpg',
+'assets/img/pins/Pins-1~~element11~~14.jpg',
+'assets/img/pins/Pins-1~~element11~~18.jpg',
+'assets/img/pins/Pins-1~~element11~~19.jpg',
+'assets/img/pins/Pins-1~~element11~~2.jpg',
+'assets/img/pins/Pins-1~~element11~~20.jpg',
+'assets/img/pins/Pins-1~~element11~~21.jpg',
+'assets/img/pins/Pins-1~~element11~~22.jpg',
+'assets/img/pins/Pins-1~~element11~~23.jpg',
+'assets/img/pins/Pins-1~~element11~~24.jpg',
+'assets/img/pins/Pins-1~~element11~~25.jpg',
+'assets/img/pins/Pins-1~~element11~~29.jpg',
+'assets/img/pins/Pins-1~~element11~~3.jpg',
+'assets/img/pins/Pins-1~~element11~~30.jpg',
+'assets/img/pins/Pins-1~~element11~~31.jpg',
+'assets/img/pins/Pins-1~~element11~~35.jpg',
+'assets/img/pins/Pins-1~~element11~~36.jpg',
+'assets/img/pins/Pins-1~~element11~~37.jpg',
+'assets/img/pins/Pins-1~~element11~~38.jpg',
+'assets/img/pins/Pins-1~~element11~~6.jpg',
+'assets/img/pins/Pins-1~~element11~~7.jpg',
+'assets/img/pins/Pins-1~~element21.jpg'];
 
 $(document).ready(function() {
     $('.ui.accordion').accordion();
@@ -223,84 +335,55 @@ $(document).ready(function() {
 
     $('#see-pendants, #dropdown-pendant').on('click', function(e){
         e.preventDefault();
-        hideEverything();
+        showTheSelectedCollection(pendantsArray, 'Pendants');
         hideMain();
-        $('#pendants').show();
     });
 
     $('#dropdown-earrings, #see-earrings').on('click', function(e){
         e.preventDefault();
-        if (!$('#earring-cards').val()) {
-            for (var i =0, itsLength = earringArray.length; i < itsLength; i++){
-                $('#earring-cards').append('<div class = "ui raised stackable card">'+
-                        '<div class = "image" style = "background-image:url('+earringArray[i]+')"></div>'+
-                        '<div class="content"><p class = "center">MODEL NUMBER</a></div></div>');
-            }
-        }
-        hideEverything();
+        showTheSelectedCollection(earringArray, 'Earrings');
         hideMain();
-        $('#earrings').show();
     });
 
     $('#dropdown-pins, #see-pins').on('click', function(e){
         e.preventDefault();
-        hideEverything();
+        showTheSelectedCollection(pinsArray, 'Pins');
         hideMain();
-        $('#pins').show();
     });
 
     $('#dropdown-yearly, #see-yearly').on('click', function(e){
         e.preventDefault();
-        hideEverything();
-        hideMain();
-        $('#by-year').show();
     });
-
-    function hideEverything() {
-        if ($('#pendants').is(':visible')) {
-            $('#pendants').hide();
-        }
-        else if ($('#earrings').is(':visible')) {
-            $('#earrings').hide();
-        }
-        else if ($('#pins').is(':visible')) {
-            $('#pins').hide()
-        }
-        else if ($('#by-year').is(':visible')) {
-            $('#by-year').hide();
-        }
-    }
 
     function showCollection(Name) {
         $('body').scrollTop(0);
+        $('#collection-display').show();
         $('.ui.rasied.card').css('visiblity', 'visible');
         TweenMax.staggerFromTo(Name, .5,
             {x:-800, opacity:0},
             {x:0, autoAlpha:1, visibility:'visible'}, .1);
     }
+
+    function showTheSelectedCollection(CollectionArray, Name) {
+            $('#collection-display').empty();
+            $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui eight stackable cards">');
+            for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
+                $('#card-holder').append('<div class = "ui raised stackable card">'+
+                        '<div class = "image" style = "background-image:url('+CollectionArray[i]+')"></div>'+
+                        '<div class="content"><p class = "center">MODEL NUMBER</a></div></div>');
+            }
+    }
+
     $('#home-button, #home-logo').on('click', function(e){
         e.preventDefault();
         if ($('.main-landing').is(':visible') == false){
-            if ($('#pendants').is(':visible')){
-                hideAndShow($('#pendants'), showHome());
-            }
-            else if ($('#earrings').is(':visible')) {
-                hideAndShow($('#earrings'), showHome());
-            }
-            else if ($('#pins').is(':visible')) {
-                hideAndShow($('#pins'), showHome());
-            }
-            else if ($('#by-year').is(':visible')) {
-                hideAndShow($('#by-year'), showHome());
-            }
+            $('#collection-display').hide();
+            showHome();
      }
     });
     function hideMain(ShowMeAfter) {
         TweenMax.to($('.main-landing'), .5,
             {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
-    }
-    function hideAndShow(HideThis, ShowThis){
-        HideThis.hide();
     }
     function showHome(){
         TweenMax.to($('.main-landing'), .5,

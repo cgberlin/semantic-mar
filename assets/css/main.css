@@ -124,24 +124,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-#pendant-cards {
-  max-width:80vw;
-  margin:2rem;
-}
-#pendants, #earrings, #by-year, #pins, #collection-display {
+#collection-display {
   display: none;
 }
-#pendants-header, #earrings-header {
-  margin-top:3rem;
-  font-size:4rem;
+#collection-header {
+  text-align: center;
+  font-size:2rem;
 }
-.ui.stackable.card .image {
+.ui.stackable.card .image, .ui.fluid.card .image {
   background:center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height:80% !important;
+}
+#collection-display {
+  margin:4rem;
+}
+.ui.fluid.card {
+  height:30rem;
 }
 .ui.stackable.card  {
   height:17rem;

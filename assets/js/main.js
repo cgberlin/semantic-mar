@@ -360,13 +360,13 @@ $(document).ready(function() {
         $('#collection-display').show();
         $('.ui.rasied.card').css('visiblity', 'visible');
         TweenMax.staggerFromTo(Name, .5,
-            {x:-800, opacity:0},
-            {x:0, autoAlpha:1, visibility:'visible'}, .1);
+            {y:+800, opacity:0},
+            {y:0, autoAlpha:1, visibility:'visible'}, .1);
     }
 
     function showTheSelectedCollection(CollectionArray, Name) {
             $('#collection-display').empty();
-            $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui eight stackable cards">');
+            $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui six stackable cards">');
             for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
                 $('#card-holder').append('<div class = "ui raised stackable card">'+
                         '<div class = "image" style = "background-image:url('+CollectionArray[i]+')"></div>'+
@@ -389,12 +389,4 @@ $(document).ready(function() {
         TweenMax.to($('.main-landing'), .5,
             {x:0, autoAlpha: 1, display:'block'});
     }
-    $('.ui.four.cards .ui.raised.card').hover(
-      	function () {
-      		TweenMax.to(this, 0.8, { css:{ scaleX:1.2, scaleY:1.2, zIndex:100, boxShadow:"0px 0px 9px gray" }, ease:Circ.easeOut});
-      	},
-      	function () {
-      		TweenMax.to(this, 1, { css:{ scaleX:1, scaleY:1, zIndex:1, boxShadow:"none" }, ease:Circ.easeOut});
-      	}
-      );
 });

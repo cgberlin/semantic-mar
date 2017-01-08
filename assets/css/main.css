@@ -18,7 +18,7 @@ body {
   display: none;
 }
 @media (max-width: 768px) {
-  .ui.fixed.top.menu .menu.right {
+  #home-button {
     display: none;
   }
   .ui.fixed.top.menu #toggle {

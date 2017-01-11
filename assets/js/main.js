@@ -366,7 +366,7 @@ $(document).ready(function() {
 
     function showTheSelectedCollection(CollectionArray, Name) {
             $('#collection-display').empty();
-            $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui six stackable cards">');
+            $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui four stackable cards">');
             for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
                 $('#card-holder').append('<div class = "ui raised stackable card">'+
                         '<div class = "image" style = "background-image:url('+CollectionArray[i]+')"></div>'+

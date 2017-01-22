@@ -91,7 +91,15 @@ body {
   min-height: 470px;
 }
 .section.four {
-  background-color: black;
+  background-image: url('../img/gg/JPEGs/greg-in-studio.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:50rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .section.five {
   background-color: #FFFFFF;
@@ -103,6 +111,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .section.seven {
   background-color:#DDDDDD;
@@ -142,6 +151,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
   background-size: cover;
   height:80% !important;
 }
@@ -152,19 +162,29 @@ body {
   height:30rem;
 }
 .ui.stackable.card  {
-  height:40rem;
+  height:20rem;
   box-shadow:none;
-  
   padding:3rem;
 }
 .ui.stackable.card .content {
   background-color:#fafafa;
 }
-#headshot-img {
-  height:40rem;
-  width:auto;
+.ui.fluid.button {
+  border:3px solid LightGray;
 }
-#about-greg-text {
+#headshot-img {
+  object-fit: contain;
+}
+#gregs-headshot {
+  width:25%;
+  margin-left:5rem;
+}
+#about-greg-text, #contact-info {
   color:white;
   font-size:5rem;
+  width:30%;
+  height:100%;
+}
+#contact-info, .center-title {
+  text-align:center;
 }

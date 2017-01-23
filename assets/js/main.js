@@ -454,9 +454,9 @@ $(document).ready(function() {
             $('#collection-display').empty();
             $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui six stackable cards">');
             for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
-                $('#card-holder').append('<div class = "ui raised stackable card">'+
+                $('#card-holder').append('<a href="'+CollectionArray[i]+'" data-featherlight="image"><div class = "ui raised stackable card">'+
                         '<div class = "image" style = "background-image:url('+CollectionArray[i]+')"></div>'+
-                        '<div class="content"><p class = "center">'+ModelArray[i]+'</a></div></div>');
+                        '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div></a>');
             }
     }
 

@@ -396,6 +396,8 @@ $(document).ready(function() {
         })
     });
 
+  
+
     $('a[data-toggle="slide"]').on('click', function(e) {
         e.preventDefault();
 
@@ -417,6 +419,9 @@ $(document).ready(function() {
         $('.flexslider').flexslider({
             animation: "slide"
         });
+        $('.ui.dropdown')
+          .dropdown()
+        ;
     });
 
     $('#see-pendants, #dropdown-pendant').on('click', function(e){

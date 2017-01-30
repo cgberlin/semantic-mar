@@ -188,3 +188,9 @@ body {
 #contact-info, .center-title {
   text-align:center;
 }
+
+@media only screen and (max-device-width: 714px) {
+    #navbar-menu-browser {
+      display: none;
+    }
+}

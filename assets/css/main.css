@@ -111,7 +111,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-flow:column;
+  color:white;
+}
+#section-six-flex {
+  display:flex;
+  flex-flow: row;
+  width:100%;
+  align-items: center;
+  justify-content: center;
 }
 .section.seven {
   background-color:#DDDDDD;
@@ -176,21 +184,40 @@ body {
   object-fit: contain;
 }
 #gregs-headshot {
-  width:25%;
-  margin-left:5rem;
+  width:100%;
 }
-#about-greg-text, #contact-info {
+#contact-info {
   color:white;
   font-size:5rem;
   width:30%;
   height:100%;
 }
-#contact-info, .center-title {
+#about-greg-text {
+  height:100%;
+  word-wrap: break-word;
+  white-space: normal;
+  color:white;
+  font-size:3rem;
+}
+#contact-info {
   text-align:center;
+}
+#greg-hidden-slider {
+  width:20%;
+}
+#scroll-description, #scroll-description-mobile {
+  color:DarkGray;
+  text-align: center;
+}
+#scroll-description-mobile {
+  display: none;
+}
+#about-greg-header {
+  color:white;
 }
 
 @media only screen and (max-device-width: 714px) {
-    #navbar-menu-browser {
+    #navbar-menu-browser, #scroll-description {
       display: none;
     }
     #left-slider-flex {
@@ -220,4 +247,21 @@ body {
       justify-content: center;
       width:100%;
     }
+    #section-five .ui.fluid.card {
+      padding:1rem;
+    }
+    #section-six-flex {
+      flex-flow: column;
+    }
+    #greg-hidden-slider {
+      width:90%;
+    }
+    #contact-info {
+      margin-top:2rem;
+      width:90%;
+    }
+    #scroll-description-mobile {
+      display: block;
+    }
+
 }

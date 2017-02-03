@@ -466,8 +466,9 @@ $(document).ready(function() {
             }
     }
 
-    $('#home-button, #home-logo').on('click', function(e){
+    $('#home-button, #home-logo, #home-button-mobile').on('click', function(e){
         e.preventDefault();
+        $('.ui.sidebar').sidebar('hide');
         if ($('.main-landing').is(':visible') == false){
             $('#collection-display').hide();
             showHome();

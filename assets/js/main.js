@@ -447,7 +447,7 @@ $(document).ready(function() {
     });
 
     function showCollection(Name) {
-        $('.ui.sidebar').sidebar('toggle');
+        $('.ui.sidebar').sidebar('hide');
         $('body').scrollTop(0);
         $('#collection-display').show();
         $('.ui.rasied.card').css('visiblity', 'visible');

@@ -396,7 +396,7 @@ $(document).ready(function() {
         })
     });
 
-  
+
 
     $('a[data-toggle="slide"]').on('click', function(e) {
         e.preventDefault();
@@ -447,6 +447,7 @@ $(document).ready(function() {
     });
 
     function showCollection(Name) {
+        $('.ui.sidebar').sidebar('toggle');
         $('body').scrollTop(0);
         $('#collection-display').show();
         $('.ui.rasied.card').css('visiblity', 'visible');

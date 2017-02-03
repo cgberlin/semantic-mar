@@ -193,4 +193,31 @@ body {
     #navbar-menu-browser {
       display: none;
     }
+    #left-slider-flex {
+      display:flex;
+      flex-flow:column;
+      align-items: center;
+      justify-content: space-around;
+      font-size:3rem;
+      height:100%;
+      background-color:black;
+    }
+    #left-slider-flex a {
+      color:white;
+      font-family: 'Marck Script', cursive;
+      font-weight:400;
+    }
+    #mobile-collections-dropdown a{
+      color:black;
+      font-family:none;
+    }
+    i {
+      color:white;
+    }
+    .menu-right {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+    }
 }

@@ -215,7 +215,11 @@ body {
 #about-greg-header {
   color:white;
 }
-
+#card-holder {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (max-device-width: 714px) {
     #navbar-menu-browser, #scroll-description {
       display: none;

@@ -1,8 +1,6 @@
 var earringArray = ['assets/img/earrings/EM.jpg',
   'assets/img/earrings/EM263_op_760x1032.jpg',
   'assets/img/earrings/EM264_op_760x1090.jpg',
-  'assets/img/earrings/EM338',
-  'assets/img/earrings/Large.jpg',
   'assets/img/earrings/EM338.jpg',
   'assets/img/earrings/EM354.jpg',
   'assets/img/earrings/EM358_op_760x950.jpg',
@@ -178,14 +176,7 @@ var earringArray = ['assets/img/earrings/EM.jpg',
   'assets/img/earrings/Seaglass-Earrings-1~~element14.jpg',
   'assets/img/earrings/Seaglass-Earrings-1~~element15.jpg',
   'assets/img/earrings/Seaglass-Earrings-1~~element47.jpg',
-  'assets/img/earrings/Seaglass-Earrings-2~~element38.jpg',
-  'assets/img/earrings/marofsb_2012_002.jpg',
-  'assets/img/earrings/marofsb_2012_003.jpg',
-  'assets/img/earrings/marofsb_2012_005.jpg',
-  'assets/img/earrings/marofsb_2012_006.jpg',
-  'assets/img/earrings/marofsb_2012_007.jpg',
-  'assets/img/earrings/marofsb_2012_011.jpg',
-  'assets/img/earrings/marofsb_2012_012.jpg'
+  'assets/img/earrings/Seaglass-Earrings-2~~element38.jpg'
 ];
 
 var pendantsArray = ['assets/img/pendants/Copy_of_NM141.jpg',
@@ -314,8 +305,7 @@ var pinModelNumbers = [
 ];
 
 var earringModelNumbers = [
-  'DISCON', 'EM263 38', 'EM264 38', 'BLANK',
-  'BLANK', 'EM338 41', 'ES354 40', 'ES358 42',
+  'DISCON', 'EM263 38', 'EM264 38', 'EM338 41', 'ES354 40', 'ES358 42',
   'ES359 43', 'ES360 42', 'ES361 42', 'EM362 43',
   'EM363 42', 'EM398 45', 'EM399 38', 'EM404 42',
   'EM405 42', 'DISCON', 'EM408 45', 'EM409 40',
@@ -383,7 +373,8 @@ var pendantModelArray = [
   'NM89 59', 'NM90 62', 'NM91 60', 'NM92 69',
   'NM93 68', 'NM137 72', 'NS71 70', 'NS63 73',
   'NS62 72', 'NS55 67', 'NM142 69', 'NS154 64',
-  'DISCON', 'NS100 65', 'NS68 69'
+  'DISCON', 'NS100 65', 'NS68 69', 'NS88 72', 'NM84 75',
+  'NM162 63', 'NM163 63', 'NM167 72'
 ];
 
 $(document).ready(function() {
@@ -442,18 +433,18 @@ $(document).ready(function() {
         hideMain();
     });
 
-    $('#dropdown-yearly, #see-yearly').on('click', function(e){
-        e.preventDefault();
-    });
+  //  $('#dropdown-yearly, #see-yearly').on('click', function(e){
+  //      e.preventDefault();
+  //  });
 
     function showCollection(Name) {
         $('.ui.sidebar').sidebar('hide');
         $('body').scrollTop(0);
         $('#collection-display').show();
         $('.ui.rasied.card').css('visiblity', 'visible');
-        TweenMax.staggerFromTo(Name, .5,
+        TweenMax.staggerFromTo(Name, .3,
             {y:+800, opacity:0},
-            {y:0, autoAlpha:1, visibility:'visible'}, .1);
+            {y:0, autoAlpha:1, visibility:'visible'}, .06);
     }
 
     function showTheSelectedCollection(CollectionArray, ModelArray, Name) {

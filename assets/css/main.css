@@ -169,10 +169,14 @@ body {
   height:30rem;
 }
 .ui.stackable.card  {
-  height:20rem;
+  height:auto;
   box-shadow:none;
   padding:3rem;
   color:black;
+}
+.ui.stackable.card img {
+  height:auto
+  width:auto;
 }
 .ui.stackable.card .content {
   background-color:#fafafa;
@@ -223,6 +227,7 @@ body {
 .featherlight-content {
       max-height: 90% !important;
       max-width: 90% !important;
+      min-height:65% !important;
       padding: 0px 0px 0 !important;
       border: 0px solid transparent !important;
     }

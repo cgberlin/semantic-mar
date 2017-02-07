@@ -445,14 +445,14 @@ $(document).ready(function() {
     function showTheSelectedCollection(CollectionArray, ModelArray, Name) {
             $('#collection-display').empty();
             if(window.innerWidth <= 800) {                                                   //checks if mobile to display the appropriate card styles
-              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui two cards">');
+              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><p class = "scroll-description-mobile">tap image for close up</p><div id = "card-holder" class = "ui two cards">');
               for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
                   $('#card-holder').append('<a href="'+CollectionArray[i]+'" data-featherlight="image"><div class = "ui raised stackable card">'+
                           '<div class = "image"><img src="'+CollectionArray[i]+'"/></div>'+
                           '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div></a>');
               }
             } else {
-              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui six stackable cards">');
+              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><p class = "scroll-description-mobile">tap image for close up</p><div id = "card-holder" class = "ui six stackable cards">');
               for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
                   $('#card-holder').append('<a href="'+CollectionArray[i]+'" data-featherlight="image"><div class = "ui raised stackable card">'+
                           '<div class = "image" style = "background-image:url('+CollectionArray[i]+')"></div>'+

@@ -1,3 +1,115 @@
+
+
+$(document).ready(function() {
+    $('.ui.accordion').accordion();
+    $('a[data-toggle="popup"]').each(function() {
+        $(this).popup({
+            popup: $(this).attr('data-content'),
+            position: $(this).attr('data-position'),
+            on: 'click'
+        })
+    });
+
+    $('a[data-toggle="slide"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 60
+        }, 900, 'swing');
+
+        $('.ui.sidebar').sidebar('hide');
+    });
+
+    $('#toggle').click(function() {
+        $('.ui.sidebar').sidebar('toggle');
+    });
+
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+        $('.ui.dropdown')
+          .dropdown()
+        ;
+    });
+
+    $('#see-pendants, #dropdown-pendant').on('click', function(e){
+        e.preventDefault();
+        showTheSelectedCollection(pendantsArray, pendantModelArray, 'Pendants');
+        hideMain();
+    });
+
+    $('#dropdown-earrings, #see-earrings').on('click', function(e){
+        e.preventDefault();
+        showTheSelectedCollection(earringArray, earringModelNumbers, 'Earrings');
+        hideMain();
+    });
+
+    $('#dropdown-pins, #see-pins').on('click', function(e){
+        e.preventDefault();
+        showTheSelectedCollection(pinsArray, pinModelNumbers, 'Pins');
+        hideMain();
+    });
+
+  //  $('#dropdown-yearly, #see-yearly').on('click', function(e){
+  //      e.preventDefault();
+  //  });
+
+    function showCollection(Name) {
+        $('.ui.sidebar').sidebar('hide');
+        $('body').scrollTop(0);
+        $('#collection-display').show();
+        $('.ui.rasied.card').css('visiblity', 'visible');
+        TweenMax.staggerFromTo(Name, .3,
+            {y:+800, opacity:0},
+            {y:0, autoAlpha:1, visibility:'visible'}, .06);
+    }
+
+    function showTheSelectedCollection(CollectionArray, ModelArray, Name) {
+            $('#collection-display').empty();
+            if(window.innerWidth <= 800) {                                                   //checks if mobile to display the appropriate card styles
+              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui two cards">');
+              for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
+                  $('#card-holder').append('<div class = "ui raised stackable card">'+
+                          '<div class = "image"><img src="'+CollectionArray[i]+'"/></div>'+
+                          '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div>');
+              }
+            } else {
+              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><div id = "card-holder" class = "ui six stackable cards">');
+              for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
+                  $('#card-holder').append('<div class = "ui raised stackable card">'+
+                          '<div class = "image"><img src="'+CollectionArray[i]+'"/></div>'+
+                          '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div>');
+              }
+            }
+
+    }
+
+    $('#collection-display > .image').hover(function(){
+        console.log('asdasda');
+    });
+
+    $('#home-button, #home-logo, #home-button-mobile').on('click', function(e){
+        e.preventDefault();
+        $('.ui.sidebar').sidebar('hide');
+        if ($('.main-landing').is(':visible') == false){
+            $('#collection-display').hide();
+            showHome();
+     }
+    });
+    function hideMain(ShowMeAfter) {
+        TweenMax.to($('.main-landing'), .5,
+            {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
+    }
+    function showHome(){
+        TweenMax.to($('.main-landing'), .5,
+            {x:0, autoAlpha: 1, display:'block'});
+    }
+});
+
 var earringArray = [
   'assets/img/earrings/EM263_op_760x1032.jpg',
   'assets/img/earrings/EM264_op_760x1090.jpg',
@@ -371,111 +483,3 @@ var pendantModelArray = [
   'NS100 65', 'NS68 69', 'NS88 72', 'NM84 75',
   'NM162 63', 'NM163 63', 'NM167 72'
 ];
-
-$(document).ready(function() {
-    $('.ui.accordion').accordion();
-    $('a[data-toggle="popup"]').each(function() {
-        $(this).popup({
-            popup: $(this).attr('data-content'),
-            position: $(this).attr('data-position'),
-            on: 'click'
-        })
-    });
-
-
-
-    $('a[data-toggle="slide"]').on('click', function(e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 60
-        }, 900, 'swing');
-
-        $('.ui.sidebar').sidebar('hide');
-    });
-
-    $('#toggle').click(function() {
-        $('.ui.sidebar').sidebar('toggle');
-    });
-
-    $(window).load(function() {
-        $('.flexslider').flexslider({
-            animation: "slide"
-        });
-        $('.ui.dropdown')
-          .dropdown()
-        ;
-    });
-
-    $('#see-pendants, #dropdown-pendant').on('click', function(e){
-        e.preventDefault();
-        showTheSelectedCollection(pendantsArray, pendantModelArray, 'Pendants');
-        hideMain();
-    });
-
-    $('#dropdown-earrings, #see-earrings').on('click', function(e){
-        e.preventDefault();
-        showTheSelectedCollection(earringArray, earringModelNumbers, 'Earrings');
-        hideMain();
-    });
-
-    $('#dropdown-pins, #see-pins').on('click', function(e){
-        e.preventDefault();
-        showTheSelectedCollection(pinsArray, pinModelNumbers, 'Pins');
-        hideMain();
-    });
-
-  //  $('#dropdown-yearly, #see-yearly').on('click', function(e){
-  //      e.preventDefault();
-  //  });
-
-    function showCollection(Name) {
-        $('.ui.sidebar').sidebar('hide');
-        $('body').scrollTop(0);
-        $('#collection-display').show();
-        $('.ui.rasied.card').css('visiblity', 'visible');
-        TweenMax.staggerFromTo(Name, .3,
-            {y:+800, opacity:0},
-            {y:0, autoAlpha:1, visibility:'visible'}, .06);
-    }
-
-    function showTheSelectedCollection(CollectionArray, ModelArray, Name) {
-            $('#collection-display').empty();
-            if(window.innerWidth <= 800) {                                                   //checks if mobile to display the appropriate card styles
-              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><p class = "scroll-description-mobile">tap image for close up</p><div id = "card-holder" class = "ui two cards">');
-              for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
-                  $('#card-holder').append('<a href="'+CollectionArray[i]+'" data-featherlight="image"><div class = "ui raised stackable card">'+
-                          '<div class = "image"><img src="'+CollectionArray[i]+'"/></div>'+
-                          '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div></a>');
-              }
-            } else {
-              $('#collection-display').append('<h1 id = "collection-header">'+Name+'</h1><p class = "scroll-description-mobile">tap image for close up</p><div id = "card-holder" class = "ui six stackable cards">');
-              for (var i =0, itsLength = CollectionArray.length; i < itsLength; i++){
-                  $('#card-holder').append('<a href="'+CollectionArray[i]+'" data-featherlight="image"><div class = "ui raised stackable card">'+
-                          '<div class = "image"><img src="'+CollectionArray[i]+'"/></div>'+
-                          '<div class="content"><p class = "center">'+ModelArray[i]+'</div></div></a>');
-              }
-            }
-
-    }
-
-    $('#home-button, #home-logo, #home-button-mobile').on('click', function(e){
-        e.preventDefault();
-        $('.ui.sidebar').sidebar('hide');
-        if ($('.main-landing').is(':visible') == false){
-            $('#collection-display').hide();
-            showHome();
-     }
-    });
-    function hideMain(ShowMeAfter) {
-        TweenMax.to($('.main-landing'), .5,
-            {x:+800, autoAlpha: 0, display:'none', onComplete:showCollection($('.ui.raised.card'))});
-    }
-    function showHome(){
-        TweenMax.to($('.main-landing'), .5,
-            {x:0, autoAlpha: 1, display:'block'});
-    }
-});

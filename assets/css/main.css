@@ -14,9 +14,6 @@ body {
 .ui.fixed.top.menu .ui.popup .item {
   color: #000000;
 }
-.ui.fixed.top.menu #toggle {
-  display: none;
-}
 @media (max-width: 768px) {
   #home-button {
     display: none;
@@ -145,7 +142,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#collection-display {
+#collection-display, #scroll-description-mobile, .ui.fixed.top.menu #toggle {
   display: none;
 }
 #collection-header {
@@ -178,6 +175,9 @@ body {
   height:auto
   width:auto;
 }
+.ui.stackable.card:hover {
+  cursor:default;
+}
 .ui.stackable.card .content {
   background-color:#fafafa;
 }
@@ -209,12 +209,12 @@ body {
 #greg-hidden-slider {
   width:20%;
 }
+.ui.move.right.reveal {
+  width:100%;
+}
 .scroll-description, .scroll-description-mobile {
   color:DarkGray;
   text-align: center;
-}
-#scroll-description-mobile {
-  display: none;
 }
 #about-greg-header {
   color:white;
@@ -235,9 +235,23 @@ body {
         min-height: 30rem;
         width: auto !important;
     }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1600px) {
+  #greg-hidden-slider {
+    width:30%;
+  }
+  .ui.stackable.card {
+    padding:2rem;
+  }
+}
+@media only screen and (max-width: 1085px) {
   .section.four {
       background-image: url('../img/gg/JPEGs/greg-in-studio-mobile.png');
+    }
+    #greg-hidden-slider {
+      width:38%;
+    }
+    .ui.stackable.card {
+      padding:1rem;
     }
   .section.one {
       background-image: url('../img/gg/JPEGs/neck-mobile.png');

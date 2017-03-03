@@ -285,7 +285,29 @@ var earringArray = [
   'assets/img/earrings/Seaglass-Earrings-1~~element14.jpg',
   'assets/img/earrings/Seaglass-Earrings-1~~element15.jpg',
 
-  'assets/img/earrings/Seaglass-Earrings-2~~element38.jpg'
+  'assets/img/earrings/Seaglass-Earrings-2~~element38.jpg',
+  'assets/img/earrings/earrings2/EM431 41.jpg',  
+  'assets/img/earrings/earrings2/EM437 42.jpg',  
+  'assets/img/earrings/earrings2/EM442 41.jpg',  
+  'assets/img/earrings/earrings2/EM447 43.jpg',  
+  'assets/img/earrings/earrings2/EM454 36.jpg',
+  'assets/img/earrings/earrings2/EM432 44.jpg',  
+  'assets/img/earrings/earrings2/EM438 42.jpg',  
+  'assets/img/earrings/earrings2/EM443 44.jpg',  
+  'assets/img/earrings/earrings2/EM448 38.jpg',  
+  'assets/img/earrings/earrings2/ES449 39.jpg',
+  'assets/img/earrings/earrings2/EM434 44.jpg',  
+  'assets/img/earrings/earrings2/EM439 40.jpg',  
+  'assets/img/earrings/earrings2/EM444 43.jpg',  
+  'assets/img/earrings/earrings2/EM450 41.jpg',
+  'assets/img/earrings/earrings2/EM435 45.jpg',  
+  'assets/img/earrings/earrings2/EM440 41.jpg',  
+  'assets/img/earrings/earrings2/EM445 42.jpg',  
+  'assets/img/earrings/earrings2/EM451 40.jpg',
+  'assets/img/earrings/earrings2/EM436 44.jpg',  
+  'assets/img/earrings/earrings2/EM441 41.jpg',  
+  'assets/img/earrings/earrings2/EM446 45.jpg',  
+  'assets/img/earrings/earrings2/EM453 43.jpg'
 ];
 
 var pendantsArray = ['assets/img/pendants/Copy_of_NM141.jpg',
@@ -371,7 +393,19 @@ var pendantsArray = ['assets/img/pendants/Copy_of_NM141.jpg',
   'assets/img/pendants/MG_8912.jpg',
   'assets/img/pendants/marofsb_2012_015.jpg',
   'assets/img/pendants/marofsb_2012_016.jpg',
-  'assets/img/pendants/pendant_2.jpg'
+  'assets/img/pendants/pendant_2.jpg',
+  'assets/img/pendants/pendants2/NM171 64.jpg',
+  'assets/img/pendants/pendants2/NM174 72.jpg',
+  'assets/img/pendants/pendants2/NM178 65.jpg',
+  'assets/img/pendants/pendants2/NM183 65.jpg',
+  'assets/img/pendants/pendants2/NM172 68.jpg',
+  'assets/img/pendants/pendants2/NM176 66.jpg',
+  'assets/img/pendants/pendants2/NM180 66.jpg',
+  'assets/img/pendants/pendants2/NM184 64.jpg',
+  'assets/img/pendants/pendants2/NM173 70.jpg',
+  'assets/img/pendants/pendants2/NM177 65.jpg',
+  'assets/img/pendants/pendants2/NM181 50.jpg',
+  'assets/img/pendants/pendants2/NS182 60.jpg'
 ];
 
 var pinsArray = ['assets/img/pins/319P.jpg',
@@ -457,7 +491,12 @@ var earringModelNumbers = [
   'EM420 42', 'EM423 41', 'EM424 42',
   'EM427 40', 'EM425 42', 'EM351 41', 'EM452 40',
   'EM355 40', 'EM356 42', 'EM357 41',
-  'ES269 43'
+  'ES269 43', 'EM431 41',  'EM437 42',  'EM442 41',  'EM447 43',  'EM454 36',
+  'EM432 44',  'EM438 42',  'EM443 44',  'EM448 38',  'ES449 39',
+  'EM434 44',  'EM439 40',  'EM444 43',  'EM450 41',
+  'EM435 45',  'EM440 41',  'EM445 42',  'EM451 40',
+  'EM436 44',  'EM441 41',  'EM446 45',  'EM453 43'
+
 ];
 
 var pendantModelArray = [
@@ -481,5 +520,9 @@ var pendantModelArray = [
   'NM93 68', 'NM137 72', 'NS71 70', 'NS63 73',
   'NS62 72', 'NS55 67', 'NM142 69', 'NS154 64',
   'NS100 65', 'NS68 69', 'NS88 72', 'NM84 75',
-  'NM162 63', 'NM163 63', 'NM167 72'
+  'NM162 63', 'NM163 63', 'NM167 72',
+  'NM171 64',  'NM174 72',  'NM178 65',  'NM183 65',
+  'NM172 68',  'NM176 66',  'NM180 66',  'NM184 64',
+  'NM173 70',  'NM177 65',  'NM181 50',  'NS182 60'
+
 ];

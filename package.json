@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "colors.css": "^3.0.0",
-    "jquery": "^2.2.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {},
   "scripts": {
